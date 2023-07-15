@@ -1,0 +1,307 @@
+Cabal-version:  3.0
+Name:                hocct-ModelingAlgorithms
+Version:     0.1.0
+Synopsis:    
+Description:         
+Homepage:       
+license: GPL-2.0-only
+license-file: LICENSE
+Author:              
+Maintainer:  
+Category:       
+Tested-with:    GHC == 9.0.2 || == 9.2.4 || == 9.4.2 
+Build-Type: Custom
+custom-setup
+  setup-depends: Cabal, base, process
+
+Extra-source-files:
+
+                       csrc/HOCCT_ModelingAlgorithms_BRepFill_Filling.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepOffsetAPI_ThruSections.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeSolid.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Sewing.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeFace.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeWire.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeEdge.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeVertex.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeBox.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeSphere.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeOneAxis.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Fuse.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Cut.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Common.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Splitter.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_BooleanOperation.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_BuilderAlgo.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Algo.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Transform.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Copy.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_ModifyShape.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeShape.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Command.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrim_Sphere.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrim_Revolution.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrim_OneAxis.h
+                       csrc/HOCCT_ModelingAlgorithms_BRepFill_Filling.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepOffsetAPI_ThruSections.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeSolid.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Sewing.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeFace.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeWire.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeEdge.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeVertex.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeBox.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeSphere.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeOneAxis.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Fuse.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Cut.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Common.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Splitter.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_BooleanOperation.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_BuilderAlgo.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Algo.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Transform.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Copy.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_ModifyShape.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeShape.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Command.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrim_Sphere.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrim_Revolution.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrim_OneAxis.cpp
+
+
+
+
+Library
+  default-language: Haskell2010
+  hs-source-dirs: src
+  ghc-options:  -Wall -funbox-strict-fields -fno-warn-unused-do-bind -fno-warn-orphans -fno-warn-unused-imports
+  ghc-prof-options: -caf-all -auto-all
+  cxx-options: -std=c++17
+  Build-Depends: base > 4 && < 5, fficxx >= 0.7, fficxx-runtime >= 0.7, template-haskell, stdcxx, hocct-Foundation, hocct-ModelingData
+  Exposed-Modules:
+                       HOCCT.ModelingAlgorithms
+                       HOCCT.ModelingAlgorithms.Ordinary
+                       HOCCT.ModelingAlgorithms.Template
+                       HOCCT.ModelingAlgorithms.TH
+                       HOCCT.ModelingAlgorithms.BRepFill_Filling
+                       HOCCT.ModelingAlgorithms.BRepOffsetAPI_ThruSections
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeSolid
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Sewing
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeFace
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeWire
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeEdge
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeVertex
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeBox
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Fuse
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Cut
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Common
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Splitter
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BooleanOperation
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BuilderAlgo
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Algo
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Transform
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Copy
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_ModifyShape
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Command
+                       HOCCT.ModelingAlgorithms.BRepPrim_Sphere
+                       HOCCT.ModelingAlgorithms.BRepPrim_Revolution
+                       HOCCT.ModelingAlgorithms.BRepPrim_OneAxis
+                       HOCCT.ModelingAlgorithms.BRepFill_Filling.RawType
+                       HOCCT.ModelingAlgorithms.BRepOffsetAPI_ThruSections.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeSolid.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Sewing.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeFace.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeWire.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeEdge.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeVertex.RawType
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeBox.RawType
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.RawType
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis.RawType
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Fuse.RawType
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Cut.RawType
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Common.RawType
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Splitter.RawType
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BooleanOperation.RawType
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BuilderAlgo.RawType
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Algo.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Transform.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Copy.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_ModifyShape.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape.RawType
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Command.RawType
+                       HOCCT.ModelingAlgorithms.BRepPrim_Sphere.RawType
+                       HOCCT.ModelingAlgorithms.BRepPrim_Revolution.RawType
+                       HOCCT.ModelingAlgorithms.BRepPrim_OneAxis.RawType
+                       HOCCT.ModelingAlgorithms.BRepFill_Filling.FFI
+                       HOCCT.ModelingAlgorithms.BRepOffsetAPI_ThruSections.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeSolid.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Sewing.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeFace.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeWire.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeEdge.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeVertex.FFI
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeBox.FFI
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.FFI
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis.FFI
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Fuse.FFI
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Cut.FFI
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Common.FFI
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Splitter.FFI
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BooleanOperation.FFI
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BuilderAlgo.FFI
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Algo.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Transform.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Copy.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_ModifyShape.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape.FFI
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Command.FFI
+                       HOCCT.ModelingAlgorithms.BRepPrim_Sphere.FFI
+                       HOCCT.ModelingAlgorithms.BRepPrim_Revolution.FFI
+                       HOCCT.ModelingAlgorithms.BRepPrim_OneAxis.FFI
+                       HOCCT.ModelingAlgorithms.BRepFill_Filling.Interface
+                       HOCCT.ModelingAlgorithms.BRepOffsetAPI_ThruSections.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeSolid.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Sewing.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeFace.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeWire.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeEdge.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeVertex.Interface
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeBox.Interface
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.Interface
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis.Interface
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Fuse.Interface
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Cut.Interface
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Common.Interface
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Splitter.Interface
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BooleanOperation.Interface
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BuilderAlgo.Interface
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Algo.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Transform.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Copy.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_ModifyShape.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape.Interface
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Command.Interface
+                       HOCCT.ModelingAlgorithms.BRepPrim_Sphere.Interface
+                       HOCCT.ModelingAlgorithms.BRepPrim_Revolution.Interface
+                       HOCCT.ModelingAlgorithms.BRepPrim_OneAxis.Interface
+                       HOCCT.ModelingAlgorithms.BRepFill_Filling.Cast
+                       HOCCT.ModelingAlgorithms.BRepOffsetAPI_ThruSections.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeSolid.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Sewing.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeFace.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeWire.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeEdge.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeVertex.Cast
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeBox.Cast
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.Cast
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis.Cast
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Fuse.Cast
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Cut.Cast
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Common.Cast
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Splitter.Cast
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BooleanOperation.Cast
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BuilderAlgo.Cast
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Algo.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Transform.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Copy.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_ModifyShape.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape.Cast
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Command.Cast
+                       HOCCT.ModelingAlgorithms.BRepPrim_Sphere.Cast
+                       HOCCT.ModelingAlgorithms.BRepPrim_Revolution.Cast
+                       HOCCT.ModelingAlgorithms.BRepPrim_OneAxis.Cast
+                       HOCCT.ModelingAlgorithms.BRepFill_Filling.Implementation
+                       HOCCT.ModelingAlgorithms.BRepOffsetAPI_ThruSections.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeSolid.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Sewing.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeFace.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeWire.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeEdge.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeVertex.Implementation
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeBox.Implementation
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.Implementation
+                       HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis.Implementation
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Fuse.Implementation
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Cut.Implementation
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Common.Implementation
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Splitter.Implementation
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BooleanOperation.Implementation
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_BuilderAlgo.Implementation
+                       HOCCT.ModelingAlgorithms.BRepAlgoAPI_Algo.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Transform.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Copy.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_ModifyShape.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape.Implementation
+                       HOCCT.ModelingAlgorithms.BRepBuilderAPI_Command.Implementation
+                       HOCCT.ModelingAlgorithms.BRepPrim_Sphere.Implementation
+                       HOCCT.ModelingAlgorithms.BRepPrim_Revolution.Implementation
+                       HOCCT.ModelingAlgorithms.BRepPrim_OneAxis.Implementation
+
+  Other-Modules:
+                       
+
+  extra-lib-dirs: 
+  extra-libraries:    
+  Include-dirs:       csrc 
+  pkgconfig-depends: 
+  Install-includes:
+                       hocct-ModelingAlgorithmsType.h
+                       HOCCT_ModelingAlgorithms_BRepFill_Filling.h
+                       HOCCT_ModelingAlgorithms_BRepOffsetAPI_ThruSections.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeSolid.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_Sewing.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeFace.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeWire.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeEdge.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeVertex.h
+                       HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeBox.h
+                       HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeSphere.h
+                       HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeOneAxis.h
+                       HOCCT_ModelingAlgorithms_BRepAlgoAPI_Fuse.h
+                       HOCCT_ModelingAlgorithms_BRepAlgoAPI_Cut.h
+                       HOCCT_ModelingAlgorithms_BRepAlgoAPI_Common.h
+                       HOCCT_ModelingAlgorithms_BRepAlgoAPI_Splitter.h
+                       HOCCT_ModelingAlgorithms_BRepAlgoAPI_BooleanOperation.h
+                       HOCCT_ModelingAlgorithms_BRepAlgoAPI_BuilderAlgo.h
+                       HOCCT_ModelingAlgorithms_BRepAlgoAPI_Algo.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_Transform.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_Copy.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_ModifyShape.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeShape.h
+                       HOCCT_ModelingAlgorithms_BRepBuilderAPI_Command.h
+                       HOCCT_ModelingAlgorithms_BRepPrim_Sphere.h
+                       HOCCT_ModelingAlgorithms_BRepPrim_Revolution.h
+                       HOCCT_ModelingAlgorithms_BRepPrim_OneAxis.h
+
+  Cxx-sources:
+                       csrc/HOCCT_ModelingAlgorithms_BRepFill_Filling.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepOffsetAPI_ThruSections.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeSolid.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Sewing.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeFace.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeWire.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeEdge.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeVertex.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeBox.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeSphere.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeOneAxis.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Fuse.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Cut.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Common.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Splitter.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_BooleanOperation.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_BuilderAlgo.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepAlgoAPI_Algo.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Transform.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Copy.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_ModifyShape.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeShape.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepBuilderAPI_Command.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrim_Sphere.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrim_Revolution.cpp
+                       csrc/HOCCT_ModelingAlgorithms_BRepPrim_OneAxis.cpp
+
