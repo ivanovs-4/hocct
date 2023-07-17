@@ -45,3 +45,18 @@ instance () => IBRepBuilderAPI_MakeShape (BRepBuilderAPI_Copy)
         shape = xform0 c_brepbuilderapi_copy_shape
 
 instance () => IBRepBuilderAPI_Command (BRepBuilderAPI_Copy) where
+
+newBRepBuilderAPI_Copy :: () => IO BRepBuilderAPI_Copy
+newBRepBuilderAPI_Copy
+  = xformnull c_brepbuilderapi_copy_newbrepbuilderapi_copy
+
+newBRepBuilderAPI_Copy_Shape ::
+                               (ITopoDS_Shape c0, FPtr c0) =>
+                               c0 -> CBool -> CBool -> IO BRepBuilderAPI_Copy
+newBRepBuilderAPI_Copy_Shape
+  = xform2 c_brepbuilderapi_copy_newbrepbuilderapi_copy_shape
+
+bRepBuilderAPI_Copy_Perform ::
+                              (ITopoDS_Shape c0, FPtr c0) => BRepBuilderAPI_Copy -> c0 -> IO ()
+bRepBuilderAPI_Copy_Perform
+  = xform1 c_brepbuilderapi_copy_brepbuilderapi_copy_perform
