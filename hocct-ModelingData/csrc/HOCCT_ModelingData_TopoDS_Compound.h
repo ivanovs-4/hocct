@@ -16,7 +16,7 @@ extern "C" {
 
 
 #define TOPODS_COMPOUND_DECL_NONVIRT(Type) \
-
+Type##_p Type##_newTopoDS_Compound (  );
 
 
 #define TOPODS_COMPOUND_DECL_ACCESSOR(Type) \
@@ -28,7 +28,9 @@ extern "C" {
 
 
 #define TOPODS_COMPOUND_DEF_NONVIRT(Type) \
-
+Type##_p Type##_newTopoDS_Compound (  ) {\
+Type* newp=new Type();return from_nonconst_to_nonconst<Type##_t, Type>(newp);\
+}
 
 
 #define TOPODS_COMPOUND_DEF_ACCESSOR(Type) \
