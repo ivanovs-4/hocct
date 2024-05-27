@@ -21,17 +21,18 @@ config bInfo = do
         let hbInfo =
                 buildInfo
                     { extraLibs = extraLibs buildInfo <>
-                    -- ls /nix/store/y3gg97453hk49v9fd4ajak8ws8zqrz9q-opencascade/lib/*.so | sed -rn 's/\S+\/lib(.+).so/\1/p'
+                        -- ls "$(nix-build --no-out-link '<nixpkgs>' -A opencascade-occt)/lib"/*.so | sed -rn 's/\S+\/lib(.+).so/\1/p'
+                        -- 7.6.2
                         (List.words " \
-                          \ TKBinL TKBin TKBinTObj TKBinXCAF TKBool TKBO TKBRep     \
-                          \ TKCAF TKCDF TKDCAF TKDraw TKernel TKFeat TKFillet TKG2d \
-                          \ TKG3d TKGeomAlgo TKGeomBase TKHLR TKIGES TKLCAF TKMath  \
-                          \ TKMesh TKMeshVS TKOffset TKOpenGl TKOpenGlTest TKPrim   \
-                          \ TKQADraw TKRWMesh TKService TKShHealing TKStdL TKStd    \
-                          \ TKSTEP209 TKSTEPAttr TKSTEPBase TKSTEP TKSTL TKTObjDRAW \
-                          \ TKTObj TKTopAlgo TKTopTest TKV3d TKVCAF TKViewerTest    \
-                          \ TKVRML TKXCAF TKXDEDRAW TKXDEIGES TKXDESTEP TKXMesh     \
-                          \ TKXmlL TKXml TKXmlTObj TKXmlXCAF TKXSBase TKXSDRAW      \
+                          \ TKBinL TKBin TKBinTObj TKBinXCAF TKBool TKBO TKBRep  \
+                          \ TKCAF TKCDF TKDCAF TKDraw TKernel TKFeat TKFillet    \
+                          \ TKG2d TKG3d TKGeomAlgo TKGeomBase TKHLR TKLCAF       \
+                          \ TKMath TKMesh TKMeshVS TKOffset TKOpenGl             \
+                          \ TKOpenGlTest TKPrim TKQADraw TKRWMesh TKService      \
+                          \ TKShHealing TKStdL TKStd TKTObjDRAW TKTObj TKTopAlgo \
+                          \ TKTopTest TKV3d TKVCAF TKViewerTest TKXCAF TKXDEDRAW \
+                          \ TKXMesh TKXmlL TKXml TKXmlTObj TKXmlXCAF TKXSBase    \
+                          \ TKXSDRAW                                             \
                           \ ")
                     , extraLibDirs = extraLibDirs buildInfo <> []
                     , includeDirs = includeDirs buildInfo <> []

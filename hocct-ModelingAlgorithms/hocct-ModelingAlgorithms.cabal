@@ -78,7 +78,7 @@ Library
   ghc-options:  -Wall -funbox-strict-fields -fno-warn-unused-do-bind -fno-warn-orphans -fno-warn-unused-imports
   ghc-prof-options: -caf-all -auto-all
   cxx-options: -std=c++17
-  Build-Depends: base > 4 && < 5, fficxx >= 0.7, fficxx-runtime >= 0.7, template-haskell, stdcxx, hocct-Foundation, hocct-ModelingData
+  Build-Depends: base > 4 && < 5, fficxx-runtime >= 0.7.0.1, template-haskell, stdcxx, hocct-Foundation, hocct-ModelingData
   Exposed-Modules:
                        HOCCT.ModelingAlgorithms
                        HOCCT.ModelingAlgorithms.Ordinary
