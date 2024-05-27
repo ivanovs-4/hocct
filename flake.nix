@@ -3,7 +3,7 @@ description = "Haskell binding to [opencascade](https://dev.opencascade.org) lib
 
 inputs = {
 
-    nixpkgs.url = "github:NixOS/nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     haskell-flake-utils.url = "github:ivanovs-4/haskell-flake-utils";
 
 };
