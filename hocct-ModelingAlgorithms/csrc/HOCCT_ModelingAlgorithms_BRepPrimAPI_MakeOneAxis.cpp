@@ -1,6 +1,8 @@
 
 #include "MacroPatternMatch.h"
 
+#include "HOCCT_ModelingData_TopoDS_Solid.h"
+
 #include "HOCCT_ModelingAlgorithms_BRepBuilderAPI_MakeShape.h"
 
 #include "BRepPrimAPI_MakeOneAxis.hxx"

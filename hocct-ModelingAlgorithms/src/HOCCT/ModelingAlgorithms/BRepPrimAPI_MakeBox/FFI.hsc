@@ -6,9 +6,9 @@ import Foreign.C
 import Foreign.Ptr
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeBox.RawType
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeBox.RawType
+import HOCCT.ModelingData.TopoDS_Solid.RawType
 import HOCCT.ModelingData.TopoDS_Shape.RawType
 import HOCCT.ModelingData.TopoDS_Shell.RawType
-import HOCCT.ModelingData.TopoDS_Solid.RawType
 
 foreign import ccall interruptible
                "HOCCT_ModelingAlgorithms_BRepPrimAPI_MakeBox.h BRepPrimAPI_MakeBox_Shape"

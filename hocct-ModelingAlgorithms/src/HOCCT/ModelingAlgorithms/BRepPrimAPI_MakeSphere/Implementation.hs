@@ -22,6 +22,9 @@ import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.Cast
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.RawType
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.Cast
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.Interface
+import HOCCT.ModelingData.TopoDS_Solid.RawType
+import HOCCT.ModelingData.TopoDS_Solid.Cast
+import HOCCT.ModelingData.TopoDS_Solid.Interface
 import HOCCT.ModelingData.TopoDS_Shape.RawType
 import HOCCT.ModelingData.TopoDS_Shape.Cast
 import HOCCT.ModelingData.TopoDS_Shape.Interface

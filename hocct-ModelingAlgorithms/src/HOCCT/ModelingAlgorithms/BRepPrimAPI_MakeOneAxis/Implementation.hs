@@ -25,6 +25,9 @@ import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis.Interface
 import HOCCT.ModelingData.TopoDS_Shape.RawType
 import HOCCT.ModelingData.TopoDS_Shape.Cast
 import HOCCT.ModelingData.TopoDS_Shape.Interface
+import HOCCT.ModelingData.TopoDS_Solid.RawType
+import HOCCT.ModelingData.TopoDS_Solid.Cast
+import HOCCT.ModelingData.TopoDS_Solid.Interface
 import HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape.RawType
 import HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape.Cast
 import HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape.Interface
@@ -41,3 +44,8 @@ instance () => IBRepBuilderAPI_MakeShape (BRepPrimAPI_MakeOneAxis)
 
 instance () => IBRepBuilderAPI_Command (BRepPrimAPI_MakeOneAxis)
          where
+
+bRepPrimAPI_MakeOneAxis_Solid ::
+                                () => BRepPrimAPI_MakeOneAxis -> IO TopoDS_Solid
+bRepPrimAPI_MakeOneAxis_Solid
+  = xform0 c_brepprimapi_makeoneaxis_brepprimapi_makeoneaxis_solid

@@ -12,13 +12,15 @@ extern "C" {
 
 #include "HOCCT_ModelingAlgorithms_BRepBuilderAPI_Command.h"
 
+#include "hocct-ModelingDataType.h"
+
 
 #define BREPPRIMAPI_MAKEONEAXIS_DECL_VIRT(Type) \
 
 
 
 #define BREPPRIMAPI_MAKEONEAXIS_DECL_NONVIRT(Type) \
-
+TopoDS_Solid_p Type##_bRepPrimAPI_MakeOneAxis_Solid ( Type##_p p );
 
 
 #define BREPPRIMAPI_MAKEONEAXIS_DECL_ACCESSOR(Type) \
@@ -30,7 +32,9 @@ extern "C" {
 
 
 #define BREPPRIMAPI_MAKEONEAXIS_DEF_NONVIRT(Type) \
-
+TopoDS_Solid_p Type##_bRepPrimAPI_MakeOneAxis_Solid ( Type##_p p ) {\
+return from_const_to_nonconst<TopoDS_Solid_t, TopoDS_Solid>(&(((TYPECASTMETHOD(Type, bRepPrimAPI_MakeOneAxis_Solid, BRepPrimAPI_MakeOneAxis))(p))->Solid()));\
+}
 
 
 #define BREPPRIMAPI_MAKEONEAXIS_DEF_ACCESSOR(Type) \

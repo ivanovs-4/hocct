@@ -6,6 +6,7 @@ import Foreign.C
 import Foreign.Ptr
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.RawType
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere.RawType
+import HOCCT.ModelingData.TopoDS_Solid.RawType
 import HOCCT.ModelingData.TopoDS_Shape.RawType
 import HOCCT.ModelingAlgorithms.BRepPrim_Sphere.RawType
 
