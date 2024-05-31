@@ -1,7 +1,9 @@
 {-# LANGUAGE FlexibleContexts, FlexibleInstances,
   ForeignFunctionInterface, InterruptibleFFI #-}
 module HOCCT.ModelingAlgorithms
-       (module HOCCT.ModelingAlgorithms.BRepFill_Filling,
+       (module HOCCT.ModelingAlgorithms.BRepOffsetAPI_MakeThickSolid,
+        module HOCCT.ModelingAlgorithms.BRepOffsetAPI_MakeOffsetShape,
+        module HOCCT.ModelingAlgorithms.BRepFill_Filling,
         module HOCCT.ModelingAlgorithms.BRepOffsetAPI_ThruSections,
         module HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeSolid,
         module HOCCT.ModelingAlgorithms.BRepBuilderAPI_Sewing,
@@ -14,7 +16,9 @@ module HOCCT.ModelingAlgorithms
         module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere,
         module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeCylinder,
         module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeCone,
+        module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSweep,
         module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis,
+        module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeWedge,
         module HOCCT.ModelingAlgorithms.BRepAlgoAPI_Fuse,
         module HOCCT.ModelingAlgorithms.BRepAlgoAPI_Cut,
         module HOCCT.ModelingAlgorithms.BRepAlgoAPI_Common,
@@ -37,6 +41,8 @@ module HOCCT.ModelingAlgorithms
         module HOCCT.ModelingAlgorithms.Template,
         module HOCCT.ModelingAlgorithms.TH)
        where
+import HOCCT.ModelingAlgorithms.BRepOffsetAPI_MakeThickSolid
+import HOCCT.ModelingAlgorithms.BRepOffsetAPI_MakeOffsetShape
 import HOCCT.ModelingAlgorithms.BRepFill_Filling
 import HOCCT.ModelingAlgorithms.BRepOffsetAPI_ThruSections
 import HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeSolid
@@ -50,7 +56,9 @@ import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeTorus
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeCylinder
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeCone
+import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSweep
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis
+import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeWedge
 import HOCCT.ModelingAlgorithms.BRepAlgoAPI_Fuse
 import HOCCT.ModelingAlgorithms.BRepAlgoAPI_Cut
 import HOCCT.ModelingAlgorithms.BRepAlgoAPI_Common

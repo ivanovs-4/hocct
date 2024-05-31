@@ -6,6 +6,10 @@ extern "C" {
 #pragma once
 
 // Opaque type definition for $classname
+typedef struct BRepOffsetAPI_MakeThickSolid_tag BRepOffsetAPI_MakeThickSolid_t;typedef BRepOffsetAPI_MakeThickSolid_t * BRepOffsetAPI_MakeThickSolid_p;typedef BRepOffsetAPI_MakeThickSolid_t const* const_BRepOffsetAPI_MakeThickSolid_p;
+// Opaque type definition for $classname
+typedef struct BRepOffsetAPI_MakeOffsetShape_tag BRepOffsetAPI_MakeOffsetShape_t;typedef BRepOffsetAPI_MakeOffsetShape_t * BRepOffsetAPI_MakeOffsetShape_p;typedef BRepOffsetAPI_MakeOffsetShape_t const* const_BRepOffsetAPI_MakeOffsetShape_p;
+// Opaque type definition for $classname
 typedef struct BRepFill_Filling_tag BRepFill_Filling_t;typedef BRepFill_Filling_t * BRepFill_Filling_p;typedef BRepFill_Filling_t const* const_BRepFill_Filling_p;
 // Opaque type definition for $classname
 typedef struct BRepOffsetAPI_ThruSections_tag BRepOffsetAPI_ThruSections_t;typedef BRepOffsetAPI_ThruSections_t * BRepOffsetAPI_ThruSections_p;typedef BRepOffsetAPI_ThruSections_t const* const_BRepOffsetAPI_ThruSections_p;
@@ -32,7 +36,11 @@ typedef struct BRepPrimAPI_MakeCylinder_tag BRepPrimAPI_MakeCylinder_t;typedef B
 // Opaque type definition for $classname
 typedef struct BRepPrimAPI_MakeCone_tag BRepPrimAPI_MakeCone_t;typedef BRepPrimAPI_MakeCone_t * BRepPrimAPI_MakeCone_p;typedef BRepPrimAPI_MakeCone_t const* const_BRepPrimAPI_MakeCone_p;
 // Opaque type definition for $classname
+typedef struct BRepPrimAPI_MakeSweep_tag BRepPrimAPI_MakeSweep_t;typedef BRepPrimAPI_MakeSweep_t * BRepPrimAPI_MakeSweep_p;typedef BRepPrimAPI_MakeSweep_t const* const_BRepPrimAPI_MakeSweep_p;
+// Opaque type definition for $classname
 typedef struct BRepPrimAPI_MakeOneAxis_tag BRepPrimAPI_MakeOneAxis_t;typedef BRepPrimAPI_MakeOneAxis_t * BRepPrimAPI_MakeOneAxis_p;typedef BRepPrimAPI_MakeOneAxis_t const* const_BRepPrimAPI_MakeOneAxis_p;
+// Opaque type definition for $classname
+typedef struct BRepPrimAPI_MakeWedge_tag BRepPrimAPI_MakeWedge_t;typedef BRepPrimAPI_MakeWedge_t * BRepPrimAPI_MakeWedge_p;typedef BRepPrimAPI_MakeWedge_t const* const_BRepPrimAPI_MakeWedge_p;
 // Opaque type definition for $classname
 typedef struct BRepAlgoAPI_Fuse_tag BRepAlgoAPI_Fuse_t;typedef BRepAlgoAPI_Fuse_t * BRepAlgoAPI_Fuse_p;typedef BRepAlgoAPI_Fuse_t const* const_BRepAlgoAPI_Fuse_p;
 // Opaque type definition for $classname
