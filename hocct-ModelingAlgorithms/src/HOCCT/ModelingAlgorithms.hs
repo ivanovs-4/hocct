@@ -10,7 +10,10 @@ module HOCCT.ModelingAlgorithms
         module HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeEdge,
         module HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeVertex,
         module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeBox,
+        module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeTorus,
         module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere,
+        module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeCylinder,
+        module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeCone,
         module HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis,
         module HOCCT.ModelingAlgorithms.BRepAlgoAPI_Fuse,
         module HOCCT.ModelingAlgorithms.BRepAlgoAPI_Cut,
@@ -24,7 +27,10 @@ module HOCCT.ModelingAlgorithms
         module HOCCT.ModelingAlgorithms.BRepBuilderAPI_ModifyShape,
         module HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape,
         module HOCCT.ModelingAlgorithms.BRepBuilderAPI_Command,
+        module HOCCT.ModelingAlgorithms.BRepPrim_Torus,
         module HOCCT.ModelingAlgorithms.BRepPrim_Sphere,
+        module HOCCT.ModelingAlgorithms.BRepPrim_Cylinder,
+        module HOCCT.ModelingAlgorithms.BRepPrim_Cone,
         module HOCCT.ModelingAlgorithms.BRepPrim_Revolution,
         module HOCCT.ModelingAlgorithms.BRepPrim_OneAxis,
         module HOCCT.ModelingAlgorithms.Ordinary,
@@ -40,7 +46,10 @@ import HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeWire
 import HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeEdge
 import HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeVertex
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeBox
+import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeTorus
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeSphere
+import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeCylinder
+import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeCone
 import HOCCT.ModelingAlgorithms.BRepPrimAPI_MakeOneAxis
 import HOCCT.ModelingAlgorithms.BRepAlgoAPI_Fuse
 import HOCCT.ModelingAlgorithms.BRepAlgoAPI_Cut
@@ -54,7 +63,10 @@ import HOCCT.ModelingAlgorithms.BRepBuilderAPI_Copy
 import HOCCT.ModelingAlgorithms.BRepBuilderAPI_ModifyShape
 import HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeShape
 import HOCCT.ModelingAlgorithms.BRepBuilderAPI_Command
+import HOCCT.ModelingAlgorithms.BRepPrim_Torus
 import HOCCT.ModelingAlgorithms.BRepPrim_Sphere
+import HOCCT.ModelingAlgorithms.BRepPrim_Cylinder
+import HOCCT.ModelingAlgorithms.BRepPrim_Cone
 import HOCCT.ModelingAlgorithms.BRepPrim_Revolution
 import HOCCT.ModelingAlgorithms.BRepPrim_OneAxis
 import HOCCT.ModelingAlgorithms.Template

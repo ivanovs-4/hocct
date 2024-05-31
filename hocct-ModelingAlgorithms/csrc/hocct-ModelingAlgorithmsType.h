@@ -24,7 +24,13 @@ typedef struct BRepBuilderAPI_MakeVertex_tag BRepBuilderAPI_MakeVertex_t;typedef
 // Opaque type definition for $classname
 typedef struct BRepPrimAPI_MakeBox_tag BRepPrimAPI_MakeBox_t;typedef BRepPrimAPI_MakeBox_t * BRepPrimAPI_MakeBox_p;typedef BRepPrimAPI_MakeBox_t const* const_BRepPrimAPI_MakeBox_p;
 // Opaque type definition for $classname
+typedef struct BRepPrimAPI_MakeTorus_tag BRepPrimAPI_MakeTorus_t;typedef BRepPrimAPI_MakeTorus_t * BRepPrimAPI_MakeTorus_p;typedef BRepPrimAPI_MakeTorus_t const* const_BRepPrimAPI_MakeTorus_p;
+// Opaque type definition for $classname
 typedef struct BRepPrimAPI_MakeSphere_tag BRepPrimAPI_MakeSphere_t;typedef BRepPrimAPI_MakeSphere_t * BRepPrimAPI_MakeSphere_p;typedef BRepPrimAPI_MakeSphere_t const* const_BRepPrimAPI_MakeSphere_p;
+// Opaque type definition for $classname
+typedef struct BRepPrimAPI_MakeCylinder_tag BRepPrimAPI_MakeCylinder_t;typedef BRepPrimAPI_MakeCylinder_t * BRepPrimAPI_MakeCylinder_p;typedef BRepPrimAPI_MakeCylinder_t const* const_BRepPrimAPI_MakeCylinder_p;
+// Opaque type definition for $classname
+typedef struct BRepPrimAPI_MakeCone_tag BRepPrimAPI_MakeCone_t;typedef BRepPrimAPI_MakeCone_t * BRepPrimAPI_MakeCone_p;typedef BRepPrimAPI_MakeCone_t const* const_BRepPrimAPI_MakeCone_p;
 // Opaque type definition for $classname
 typedef struct BRepPrimAPI_MakeOneAxis_tag BRepPrimAPI_MakeOneAxis_t;typedef BRepPrimAPI_MakeOneAxis_t * BRepPrimAPI_MakeOneAxis_p;typedef BRepPrimAPI_MakeOneAxis_t const* const_BRepPrimAPI_MakeOneAxis_p;
 // Opaque type definition for $classname
@@ -52,7 +58,13 @@ typedef struct BRepBuilderAPI_MakeShape_tag BRepBuilderAPI_MakeShape_t;typedef B
 // Opaque type definition for $classname
 typedef struct BRepBuilderAPI_Command_tag BRepBuilderAPI_Command_t;typedef BRepBuilderAPI_Command_t * BRepBuilderAPI_Command_p;typedef BRepBuilderAPI_Command_t const* const_BRepBuilderAPI_Command_p;
 // Opaque type definition for $classname
+typedef struct BRepPrim_Torus_tag BRepPrim_Torus_t;typedef BRepPrim_Torus_t * BRepPrim_Torus_p;typedef BRepPrim_Torus_t const* const_BRepPrim_Torus_p;
+// Opaque type definition for $classname
 typedef struct BRepPrim_Sphere_tag BRepPrim_Sphere_t;typedef BRepPrim_Sphere_t * BRepPrim_Sphere_p;typedef BRepPrim_Sphere_t const* const_BRepPrim_Sphere_p;
+// Opaque type definition for $classname
+typedef struct BRepPrim_Cylinder_tag BRepPrim_Cylinder_t;typedef BRepPrim_Cylinder_t * BRepPrim_Cylinder_p;typedef BRepPrim_Cylinder_t const* const_BRepPrim_Cylinder_p;
+// Opaque type definition for $classname
+typedef struct BRepPrim_Cone_tag BRepPrim_Cone_t;typedef BRepPrim_Cone_t * BRepPrim_Cone_p;typedef BRepPrim_Cone_t const* const_BRepPrim_Cone_p;
 // Opaque type definition for $classname
 typedef struct BRepPrim_Revolution_tag BRepPrim_Revolution_t;typedef BRepPrim_Revolution_t * BRepPrim_Revolution_p;typedef BRepPrim_Revolution_t const* const_BRepPrim_Revolution_p;
 // Opaque type definition for $classname
