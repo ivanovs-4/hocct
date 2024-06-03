@@ -10,6 +10,12 @@ typedef struct BRepOffsetAPI_MakeThickSolid_tag BRepOffsetAPI_MakeThickSolid_t;t
 // Opaque type definition for $classname
 typedef struct BRepOffsetAPI_MakeOffsetShape_tag BRepOffsetAPI_MakeOffsetShape_t;typedef BRepOffsetAPI_MakeOffsetShape_t * BRepOffsetAPI_MakeOffsetShape_p;typedef BRepOffsetAPI_MakeOffsetShape_t const* const_BRepOffsetAPI_MakeOffsetShape_p;
 // Opaque type definition for $classname
+typedef struct BRepFilletAPI_MakeChamfer_tag BRepFilletAPI_MakeChamfer_t;typedef BRepFilletAPI_MakeChamfer_t * BRepFilletAPI_MakeChamfer_p;typedef BRepFilletAPI_MakeChamfer_t const* const_BRepFilletAPI_MakeChamfer_p;
+// Opaque type definition for $classname
+typedef struct BRepFilletAPI_MakeFillet_tag BRepFilletAPI_MakeFillet_t;typedef BRepFilletAPI_MakeFillet_t * BRepFilletAPI_MakeFillet_p;typedef BRepFilletAPI_MakeFillet_t const* const_BRepFilletAPI_MakeFillet_p;
+// Opaque type definition for $classname
+typedef struct BRepFilletAPI_LocalOperation_tag BRepFilletAPI_LocalOperation_t;typedef BRepFilletAPI_LocalOperation_t * BRepFilletAPI_LocalOperation_p;typedef BRepFilletAPI_LocalOperation_t const* const_BRepFilletAPI_LocalOperation_p;
+// Opaque type definition for $classname
 typedef struct BRepFill_Filling_tag BRepFill_Filling_t;typedef BRepFill_Filling_t * BRepFill_Filling_p;typedef BRepFill_Filling_t const* const_BRepFill_Filling_p;
 // Opaque type definition for $classname
 typedef struct BRepOffsetAPI_ThruSections_tag BRepOffsetAPI_ThruSections_t;typedef BRepOffsetAPI_ThruSections_t * BRepOffsetAPI_ThruSections_p;typedef BRepOffsetAPI_ThruSections_t const* const_BRepOffsetAPI_ThruSections_p;

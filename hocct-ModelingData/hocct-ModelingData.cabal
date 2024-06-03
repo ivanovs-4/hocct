@@ -55,6 +55,7 @@ Extra-source-files:
                        csrc/HOCCT_ModelingData_TopoDS_Compound.h
                        csrc/HOCCT_ModelingData_TopoDS_CompSolid.h
                        csrc/HOCCT_ModelingData_TopoDS_Shape.h
+                       csrc/HOCCT_ModelingData_TopExp_Explorer.h
                        csrc/HOCCT_ModelingData_BRepTools.h
                        csrc/HOCCT_ModelingData_Message_ProgressRange.h
                        csrc/HOCCT_ModelingData_GCE_MakeRotation.cpp
@@ -96,6 +97,7 @@ Extra-source-files:
                        csrc/HOCCT_ModelingData_TopoDS_Compound.cpp
                        csrc/HOCCT_ModelingData_TopoDS_CompSolid.cpp
                        csrc/HOCCT_ModelingData_TopoDS_Shape.cpp
+                       csrc/HOCCT_ModelingData_TopExp_Explorer.cpp
                        csrc/HOCCT_ModelingData_BRepTools.cpp
                        csrc/HOCCT_ModelingData_Message_ProgressRange.cpp
 
@@ -153,6 +155,7 @@ Library
                        HOCCT.ModelingData.TopoDS_Compound
                        HOCCT.ModelingData.TopoDS_CompSolid
                        HOCCT.ModelingData.TopoDS_Shape
+                       HOCCT.ModelingData.TopExp_Explorer
                        HOCCT.ModelingData.BRepTools
                        HOCCT.ModelingData.Message_ProgressRange
                        HOCCT.ModelingData.GCE_MakeRotation.RawType
@@ -194,6 +197,7 @@ Library
                        HOCCT.ModelingData.TopoDS_Compound.RawType
                        HOCCT.ModelingData.TopoDS_CompSolid.RawType
                        HOCCT.ModelingData.TopoDS_Shape.RawType
+                       HOCCT.ModelingData.TopExp_Explorer.RawType
                        HOCCT.ModelingData.BRepTools.RawType
                        HOCCT.ModelingData.Message_ProgressRange.RawType
                        HOCCT.ModelingData.GCE_MakeRotation.FFI
@@ -235,6 +239,7 @@ Library
                        HOCCT.ModelingData.TopoDS_Compound.FFI
                        HOCCT.ModelingData.TopoDS_CompSolid.FFI
                        HOCCT.ModelingData.TopoDS_Shape.FFI
+                       HOCCT.ModelingData.TopExp_Explorer.FFI
                        HOCCT.ModelingData.BRepTools.FFI
                        HOCCT.ModelingData.Message_ProgressRange.FFI
                        HOCCT.ModelingData.GCE_MakeRotation.Interface
@@ -276,6 +281,7 @@ Library
                        HOCCT.ModelingData.TopoDS_Compound.Interface
                        HOCCT.ModelingData.TopoDS_CompSolid.Interface
                        HOCCT.ModelingData.TopoDS_Shape.Interface
+                       HOCCT.ModelingData.TopExp_Explorer.Interface
                        HOCCT.ModelingData.BRepTools.Interface
                        HOCCT.ModelingData.Message_ProgressRange.Interface
                        HOCCT.ModelingData.GCE_MakeRotation.Cast
@@ -317,6 +323,7 @@ Library
                        HOCCT.ModelingData.TopoDS_Compound.Cast
                        HOCCT.ModelingData.TopoDS_CompSolid.Cast
                        HOCCT.ModelingData.TopoDS_Shape.Cast
+                       HOCCT.ModelingData.TopExp_Explorer.Cast
                        HOCCT.ModelingData.BRepTools.Cast
                        HOCCT.ModelingData.Message_ProgressRange.Cast
                        HOCCT.ModelingData.GCE_MakeRotation.Implementation
@@ -358,6 +365,7 @@ Library
                        HOCCT.ModelingData.TopoDS_Compound.Implementation
                        HOCCT.ModelingData.TopoDS_CompSolid.Implementation
                        HOCCT.ModelingData.TopoDS_Shape.Implementation
+                       HOCCT.ModelingData.TopExp_Explorer.Implementation
                        HOCCT.ModelingData.BRepTools.Implementation
                        HOCCT.ModelingData.Message_ProgressRange.Implementation
 
@@ -409,6 +417,7 @@ Library
                        HOCCT_ModelingData_TopoDS_Compound.h
                        HOCCT_ModelingData_TopoDS_CompSolid.h
                        HOCCT_ModelingData_TopoDS_Shape.h
+                       HOCCT_ModelingData_TopExp_Explorer.h
                        HOCCT_ModelingData_BRepTools.h
                        HOCCT_ModelingData_Message_ProgressRange.h
 
@@ -452,6 +461,7 @@ Library
                        csrc/HOCCT_ModelingData_TopoDS_Compound.cpp
                        csrc/HOCCT_ModelingData_TopoDS_CompSolid.cpp
                        csrc/HOCCT_ModelingData_TopoDS_Shape.cpp
+                       csrc/HOCCT_ModelingData_TopExp_Explorer.cpp
                        csrc/HOCCT_ModelingData_BRepTools.cpp
                        csrc/HOCCT_ModelingData_Message_ProgressRange.cpp
 

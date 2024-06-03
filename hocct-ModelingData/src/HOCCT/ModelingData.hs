@@ -40,6 +40,7 @@ module HOCCT.ModelingData
         module HOCCT.ModelingData.TopoDS_Compound,
         module HOCCT.ModelingData.TopoDS_CompSolid,
         module HOCCT.ModelingData.TopoDS_Shape,
+        module HOCCT.ModelingData.TopExp_Explorer,
         module HOCCT.ModelingData.BRepTools,
         module HOCCT.ModelingData.Message_ProgressRange,
         module HOCCT.ModelingData.Ordinary,
@@ -84,6 +85,7 @@ import HOCCT.ModelingData.TopoDS_Edge
 import HOCCT.ModelingData.TopoDS_Compound
 import HOCCT.ModelingData.TopoDS_CompSolid
 import HOCCT.ModelingData.TopoDS_Shape
+import HOCCT.ModelingData.TopExp_Explorer
 import HOCCT.ModelingData.BRepTools
 import HOCCT.ModelingData.Message_ProgressRange
 import HOCCT.ModelingData.Template

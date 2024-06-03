@@ -84,6 +84,8 @@ typedef struct TopoDS_CompSolid_tag TopoDS_CompSolid_t;typedef TopoDS_CompSolid_
 // Opaque type definition for $classname
 typedef struct TopoDS_Shape_tag TopoDS_Shape_t;typedef TopoDS_Shape_t * TopoDS_Shape_p;typedef TopoDS_Shape_t const* const_TopoDS_Shape_p;
 // Opaque type definition for $classname
+typedef struct TopExp_Explorer_tag TopExp_Explorer_t;typedef TopExp_Explorer_t * TopExp_Explorer_p;typedef TopExp_Explorer_t const* const_TopExp_Explorer_p;
+// Opaque type definition for $classname
 typedef struct BRepTools_tag BRepTools_t;typedef BRepTools_t * BRepTools_p;typedef BRepTools_t const* const_BRepTools_p;
 // Opaque type definition for $classname
 typedef struct Message_ProgressRange_tag Message_ProgressRange_t;typedef Message_ProgressRange_t * Message_ProgressRange_p;typedef Message_ProgressRange_t const* const_Message_ProgressRange_p;

@@ -3,6 +3,9 @@
 module HOCCT.ModelingAlgorithms
        (module HOCCT.ModelingAlgorithms.BRepOffsetAPI_MakeThickSolid,
         module HOCCT.ModelingAlgorithms.BRepOffsetAPI_MakeOffsetShape,
+        module HOCCT.ModelingAlgorithms.BRepFilletAPI_MakeChamfer,
+        module HOCCT.ModelingAlgorithms.BRepFilletAPI_MakeFillet,
+        module HOCCT.ModelingAlgorithms.BRepFilletAPI_LocalOperation,
         module HOCCT.ModelingAlgorithms.BRepFill_Filling,
         module HOCCT.ModelingAlgorithms.BRepOffsetAPI_ThruSections,
         module HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeSolid,
@@ -43,6 +46,9 @@ module HOCCT.ModelingAlgorithms
        where
 import HOCCT.ModelingAlgorithms.BRepOffsetAPI_MakeThickSolid
 import HOCCT.ModelingAlgorithms.BRepOffsetAPI_MakeOffsetShape
+import HOCCT.ModelingAlgorithms.BRepFilletAPI_MakeChamfer
+import HOCCT.ModelingAlgorithms.BRepFilletAPI_MakeFillet
+import HOCCT.ModelingAlgorithms.BRepFilletAPI_LocalOperation
 import HOCCT.ModelingAlgorithms.BRepFill_Filling
 import HOCCT.ModelingAlgorithms.BRepOffsetAPI_ThruSections
 import HOCCT.ModelingAlgorithms.BRepBuilderAPI_MakeSolid
