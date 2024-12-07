@@ -9,9 +9,8 @@ import Foreign.C
 import Foreign.Ptr
 import FFICXX.Runtime.Cast
 import HOCCT.ModelingData.TopoDS_Builder.RawType
-import HOCCT.ModelingData.TopoDS_Shape.Interface
 
-class (ITopoDS_Shape a) => ITopoDS_Builder a where
+class () => ITopoDS_Builder a where
 
 upcastTopoDS_Builder ::
                      forall a . (FPtr a, ITopoDS_Builder a) => a -> TopoDS_Builder

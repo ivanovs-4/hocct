@@ -28,3 +28,6 @@ import HOCCT.ModelingData.TopoDS_Shape.Interface
 instance () => ITopoDS_Wire (TopoDS_Wire) where
 
 instance () => ITopoDS_Shape (TopoDS_Wire) where
+
+newTopoDS_Wire :: () => IO TopoDS_Wire
+newTopoDS_Wire = xformnull c_topods_wire_newtopods_wire

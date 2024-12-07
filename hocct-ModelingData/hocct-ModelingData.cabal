@@ -45,6 +45,7 @@ Extra-source-files:
                        csrc/HOCCT_ModelingData_Geom_Curve.h
                        csrc/HOCCT_ModelingData_Geom_Point.h
                        csrc/HOCCT_ModelingData_Geom_Geometry.h
+                       csrc/HOCCT_ModelingData_BRep_Builder.h
                        csrc/HOCCT_ModelingData_TopoDS_Builder.h
                        csrc/HOCCT_ModelingData_TopoDS_Wire.h
                        csrc/HOCCT_ModelingData_TopoDS_Vertex.h
@@ -87,6 +88,7 @@ Extra-source-files:
                        csrc/HOCCT_ModelingData_Geom_Curve.cpp
                        csrc/HOCCT_ModelingData_Geom_Point.cpp
                        csrc/HOCCT_ModelingData_Geom_Geometry.cpp
+                       csrc/HOCCT_ModelingData_BRep_Builder.cpp
                        csrc/HOCCT_ModelingData_TopoDS_Builder.cpp
                        csrc/HOCCT_ModelingData_TopoDS_Wire.cpp
                        csrc/HOCCT_ModelingData_TopoDS_Vertex.cpp
@@ -145,6 +147,7 @@ Library
                        HOCCT.ModelingData.Geom_Curve
                        HOCCT.ModelingData.Geom_Point
                        HOCCT.ModelingData.Geom_Geometry
+                       HOCCT.ModelingData.BRep_Builder
                        HOCCT.ModelingData.TopoDS_Builder
                        HOCCT.ModelingData.TopoDS_Wire
                        HOCCT.ModelingData.TopoDS_Vertex
@@ -187,6 +190,7 @@ Library
                        HOCCT.ModelingData.Geom_Curve.RawType
                        HOCCT.ModelingData.Geom_Point.RawType
                        HOCCT.ModelingData.Geom_Geometry.RawType
+                       HOCCT.ModelingData.BRep_Builder.RawType
                        HOCCT.ModelingData.TopoDS_Builder.RawType
                        HOCCT.ModelingData.TopoDS_Wire.RawType
                        HOCCT.ModelingData.TopoDS_Vertex.RawType
@@ -229,6 +233,7 @@ Library
                        HOCCT.ModelingData.Geom_Curve.FFI
                        HOCCT.ModelingData.Geom_Point.FFI
                        HOCCT.ModelingData.Geom_Geometry.FFI
+                       HOCCT.ModelingData.BRep_Builder.FFI
                        HOCCT.ModelingData.TopoDS_Builder.FFI
                        HOCCT.ModelingData.TopoDS_Wire.FFI
                        HOCCT.ModelingData.TopoDS_Vertex.FFI
@@ -271,6 +276,7 @@ Library
                        HOCCT.ModelingData.Geom_Curve.Interface
                        HOCCT.ModelingData.Geom_Point.Interface
                        HOCCT.ModelingData.Geom_Geometry.Interface
+                       HOCCT.ModelingData.BRep_Builder.Interface
                        HOCCT.ModelingData.TopoDS_Builder.Interface
                        HOCCT.ModelingData.TopoDS_Wire.Interface
                        HOCCT.ModelingData.TopoDS_Vertex.Interface
@@ -313,6 +319,7 @@ Library
                        HOCCT.ModelingData.Geom_Curve.Cast
                        HOCCT.ModelingData.Geom_Point.Cast
                        HOCCT.ModelingData.Geom_Geometry.Cast
+                       HOCCT.ModelingData.BRep_Builder.Cast
                        HOCCT.ModelingData.TopoDS_Builder.Cast
                        HOCCT.ModelingData.TopoDS_Wire.Cast
                        HOCCT.ModelingData.TopoDS_Vertex.Cast
@@ -355,6 +362,7 @@ Library
                        HOCCT.ModelingData.Geom_Curve.Implementation
                        HOCCT.ModelingData.Geom_Point.Implementation
                        HOCCT.ModelingData.Geom_Geometry.Implementation
+                       HOCCT.ModelingData.BRep_Builder.Implementation
                        HOCCT.ModelingData.TopoDS_Builder.Implementation
                        HOCCT.ModelingData.TopoDS_Wire.Implementation
                        HOCCT.ModelingData.TopoDS_Vertex.Implementation
@@ -407,6 +415,7 @@ Library
                        HOCCT_ModelingData_Geom_Curve.h
                        HOCCT_ModelingData_Geom_Point.h
                        HOCCT_ModelingData_Geom_Geometry.h
+                       HOCCT_ModelingData_BRep_Builder.h
                        HOCCT_ModelingData_TopoDS_Builder.h
                        HOCCT_ModelingData_TopoDS_Wire.h
                        HOCCT_ModelingData_TopoDS_Vertex.h
@@ -451,6 +460,7 @@ Library
                        csrc/HOCCT_ModelingData_Geom_Curve.cpp
                        csrc/HOCCT_ModelingData_Geom_Point.cpp
                        csrc/HOCCT_ModelingData_Geom_Geometry.cpp
+                       csrc/HOCCT_ModelingData_BRep_Builder.cpp
                        csrc/HOCCT_ModelingData_TopoDS_Builder.cpp
                        csrc/HOCCT_ModelingData_TopoDS_Wire.cpp
                        csrc/HOCCT_ModelingData_TopoDS_Vertex.cpp

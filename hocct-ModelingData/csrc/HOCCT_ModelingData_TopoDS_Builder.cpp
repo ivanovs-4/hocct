@@ -1,7 +1,15 @@
 
 #include "MacroPatternMatch.h"
 
+#include "HOCCT_ModelingData_TopoDS_Wire.h"
+
+#include "HOCCT_ModelingData_TopoDS_Shell.h"
+
+#include "HOCCT_ModelingData_TopoDS_Solid.h"
+
 #include "HOCCT_ModelingData_TopoDS_Compound.h"
+
+#include "HOCCT_ModelingData_TopoDS_CompSolid.h"
 
 #include "HOCCT_ModelingData_TopoDS_Shape.h"
 
@@ -18,7 +26,6 @@
   (from_nonconst_to_nonconst<oname,cname ## _t>), \
   (from_nonconst_to_nonconst<cname,cname ## _t>) )
 
-TOPODS_SHAPE_DEF_VIRT(TopoDS_Builder)
 TOPODS_BUILDER_DEF_VIRT(TopoDS_Builder)
 TOPODS_BUILDER_DEF_NONVIRT(TopoDS_Builder)
 TOPODS_BUILDER_DEF_ACCESSOR(TopoDS_Builder)

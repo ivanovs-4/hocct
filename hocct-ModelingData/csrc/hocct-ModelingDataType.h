@@ -64,6 +64,8 @@ typedef struct Geom_Point_tag Geom_Point_t;typedef Geom_Point_t * Geom_Point_p;t
 // Opaque type definition for $classname
 typedef struct Geom_Geometry_tag Geom_Geometry_t;typedef Geom_Geometry_t * Geom_Geometry_p;typedef Geom_Geometry_t const* const_Geom_Geometry_p;
 // Opaque type definition for $classname
+typedef struct BRep_Builder_tag BRep_Builder_t;typedef BRep_Builder_t * BRep_Builder_p;typedef BRep_Builder_t const* const_BRep_Builder_p;
+// Opaque type definition for $classname
 typedef struct TopoDS_Builder_tag TopoDS_Builder_t;typedef TopoDS_Builder_t * TopoDS_Builder_p;typedef TopoDS_Builder_t const* const_TopoDS_Builder_p;
 // Opaque type definition for $classname
 typedef struct TopoDS_Wire_tag TopoDS_Wire_t;typedef TopoDS_Wire_t * TopoDS_Wire_p;typedef TopoDS_Wire_t const* const_TopoDS_Wire_p;

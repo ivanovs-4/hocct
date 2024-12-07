@@ -23,3 +23,6 @@ import HOCCT.ModelingData.TopoDS_Shape.Cast
 import HOCCT.ModelingData.TopoDS_Shape.Interface
 
 instance () => ITopoDS_Shape (TopoDS_Shape) where
+
+topoDS_Shape_Reverse :: () => TopoDS_Shape -> IO ()
+topoDS_Shape_Reverse = xform0 c_topods_shape_topods_shape_reverse

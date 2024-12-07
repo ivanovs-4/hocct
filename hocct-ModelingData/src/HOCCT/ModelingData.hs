@@ -30,6 +30,7 @@ module HOCCT.ModelingData
         module HOCCT.ModelingData.Geom_Curve,
         module HOCCT.ModelingData.Geom_Point,
         module HOCCT.ModelingData.Geom_Geometry,
+        module HOCCT.ModelingData.BRep_Builder,
         module HOCCT.ModelingData.TopoDS_Builder,
         module HOCCT.ModelingData.TopoDS_Wire,
         module HOCCT.ModelingData.TopoDS_Vertex,
@@ -75,6 +76,7 @@ import HOCCT.ModelingData.Geom_Surface
 import HOCCT.ModelingData.Geom_Curve
 import HOCCT.ModelingData.Geom_Point
 import HOCCT.ModelingData.Geom_Geometry
+import HOCCT.ModelingData.BRep_Builder
 import HOCCT.ModelingData.TopoDS_Builder
 import HOCCT.ModelingData.TopoDS_Wire
 import HOCCT.ModelingData.TopoDS_Vertex

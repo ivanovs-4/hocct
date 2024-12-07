@@ -14,7 +14,7 @@ extern "C" {
 
 
 #define TOPODS_SHAPE_DECL_NONVIRT(Type) \
-
+void Type##_topoDS_Shape_Reverse ( Type##_p p );
 
 
 #define TOPODS_SHAPE_DECL_ACCESSOR(Type) \
@@ -26,7 +26,9 @@ extern "C" {
 
 
 #define TOPODS_SHAPE_DEF_NONVIRT(Type) \
-
+void Type##_topoDS_Shape_Reverse ( Type##_p p ) {\
+((TYPECASTMETHOD(Type, topoDS_Shape_Reverse, TopoDS_Shape))(p))->Reverse();\
+}
 
 
 #define TOPODS_SHAPE_DEF_ACCESSOR(Type) \

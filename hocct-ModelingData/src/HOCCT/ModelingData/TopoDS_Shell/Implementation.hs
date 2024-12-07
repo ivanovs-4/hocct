@@ -28,3 +28,6 @@ import HOCCT.ModelingData.TopoDS_Shape.Interface
 instance () => ITopoDS_Shell (TopoDS_Shell) where
 
 instance () => ITopoDS_Shape (TopoDS_Shell) where
+
+newTopoDS_Shell :: () => IO TopoDS_Shell
+newTopoDS_Shell = xformnull c_topods_shell_newtopods_shell

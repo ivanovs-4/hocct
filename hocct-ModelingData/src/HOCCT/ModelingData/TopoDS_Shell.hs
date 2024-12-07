@@ -1,6 +1,6 @@
 module HOCCT.ModelingData.TopoDS_Shell
        (TopoDS_Shell(..), ITopoDS_Shell, upcastTopoDS_Shell,
-        downcastTopoDS_Shell)
+        downcastTopoDS_Shell, newTopoDS_Shell)
        where
 import HOCCT.ModelingData.TopoDS_Shell.RawType
 import HOCCT.ModelingData.TopoDS_Shell.Interface

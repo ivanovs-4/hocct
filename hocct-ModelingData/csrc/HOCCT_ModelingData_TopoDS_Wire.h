@@ -16,7 +16,7 @@ extern "C" {
 
 
 #define TOPODS_WIRE_DECL_NONVIRT(Type) \
-
+Type##_p Type##_newTopoDS_Wire (  );
 
 
 #define TOPODS_WIRE_DECL_ACCESSOR(Type) \
@@ -28,7 +28,9 @@ extern "C" {
 
 
 #define TOPODS_WIRE_DEF_NONVIRT(Type) \
-
+Type##_p Type##_newTopoDS_Wire (  ) {\
+Type* newp=new Type();return from_nonconst_to_nonconst<Type##_t, Type>(newp);\
+}
 
 
 #define TOPODS_WIRE_DEF_ACCESSOR(Type) \
