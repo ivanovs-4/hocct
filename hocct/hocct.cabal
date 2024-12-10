@@ -3,13 +3,13 @@ Name:                hocct
 Version:     0.1.0
 Synopsis:    Haskell binding to the OCCT geometry library
 Description:         hocct is a haskell Foreign Function Interface (FFI) binding to OCCT. OCCT(https://dev.opencascade.org) is an open-source full-scale 3D geometry library
-Homepage:       https://dev.opencascade.org/
+Homepage:       https://github.com/ivanovs-4/hocct
 license: GPL-2.0-only
 license-file: LICENSE
 Author:              Sergey Ivanov
 Maintainer:  Sergey Ivanov <ivanovs-4@yandex.ru>
 Category:       3D Modeling
-Tested-with:    GHC == 9.0.2 || == 9.2.4 || == 9.4.2 
+Tested-with:    GHC == 9.6.5
 Build-Type: Custom
 custom-setup
   setup-depends: Cabal, base, process
